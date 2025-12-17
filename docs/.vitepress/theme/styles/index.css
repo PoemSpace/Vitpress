@@ -1,0 +1,221 @@
+@import './hidden.css';
+@import './marker.css';
+@import './code.css';
+@import './code-group.css';
+@import './sidebarIcon.css';
+/*@import './var.css';*/
+@import './custom.css';
+/* @import './tailwind.css'; */
+
+/* 超链接 */
+.vp-doc a {
+    text-decoration: none;
+}
+
+/* 引用 */
+.vp-doc blockquote {
+    border-radius: 10px;
+    padding: 18px 20px 20px 15px;
+    position: relative;
+    background-color: rgb(142 150 170 / 12%);
+}
+
+.vp-doc table {
+    display: table;
+    width: 100%;
+}
+
+
+/* 团队页面 */
+@media (min-width: 768px) {
+    .VPTeamPage[data-v-5f7da39d] {
+        margin: 0;
+    }
+}
+
+@media (min-width: 960px) {
+    .VPTeamPageTitle[data-v-baf690b4] {
+        padding: 40px 0px 40px;
+    }
+}
+
+/* 侧边栏滚动条 */
+/* 侧边栏滚动条优化 */
+.VPSidebar {
+  /* 隐藏默认滚动条 */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* Webkit 浏览器滚动条样式 */
+.VPSidebar::-webkit-scrollbar {
+  width: 4px; /* 设置滚动条宽度 */
+  display: none; /* 默认隐藏 */
+}
+
+/* 鼠标悬停时显示滚动条 */
+.VPSidebar:hover::-webkit-scrollbar {
+  display: block;
+}
+
+/* 滚动条轨道 */
+.VPSidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* 滚动条滑块 */
+.VPSidebar::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.5); /* 使用半透明灰色 */
+  border-radius: 2px;
+}
+
+/* 滚动条滑块悬停效果 */
+.VPSidebar::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.8);
+}
+
+/* 移除滚动条上下箭头 */
+.VPSidebar::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* 优化滚动行为 */
+.VPSidebar {
+  scroll-behavior: smooth;
+  overflow-y: auto;
+}
+
+/* 确保内容可滚动 */
+.VPSidebarNav {
+  overflow-y: visible;
+}
+
+
+/* 全局滚动条样式 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* 滚动条轨道 */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.3);
+  border-radius: 3px;
+  transition: background 0.2s ease;
+}
+
+/* 滚动条滑块悬停效果 */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.5);
+}
+
+/* 移除滚动条上下箭头 */
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* Firefox 滚动条样式 */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(156, 163, 175, 0.3) transparent;
+}
+
+/* 特定区域的滚动条优化 */
+.VPSidebar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.VPSidebar::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.2);
+}
+
+.VPSidebar::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.4);
+}
+
+/* 代码块滚动条 */
+pre::-webkit-scrollbar {
+  height: 4px;
+}
+
+pre::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.2);
+  border-radius: 2px;
+}
+
+pre::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.4);
+}
+
+/* 表格滚动条 */
+table::-webkit-scrollbar {
+  height: 4px;
+}
+
+table::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.2);
+  border-radius: 2px;
+}
+
+table::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.4);
+}
+
+/* 暗色主题适配 */
+@media (prefers-color-scheme: dark) {
+  ::-webkit-scrollbar-thumb {
+    background: rgba(156, 163, 175, 0.2);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(156, 163, 175, 0.4);
+  }
+
+  * {
+    scrollbar-color: rgba(156, 163, 175, 0.2) transparent;
+  }
+
+  .VPSidebar::-webkit-scrollbar-thumb {
+    background: rgba(156, 163, 175, 0.1);
+  }
+
+  .VPSidebar::-webkit-scrollbar-thumb:hover {
+    background: rgba(156, 163, 175, 0.3);
+  }
+
+  pre::-webkit-scrollbar-thumb {
+    background: rgba(156, 163, 175, 0.1);
+  }
+
+  pre::-webkit-scrollbar-thumb:hover {
+    background: rgba(156, 163, 175, 0.3);
+  }
+
+  table::-webkit-scrollbar-thumb {
+    background: rgba(156, 163, 175, 0.1);
+  }
+
+  table::-webkit-scrollbar-thumb:hover {
+    background: rgba(156, 163, 175, 0.3);
+  }
+}
+
+/* 滚动行为优化 */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 隐藏滚动条但保持功能 */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}

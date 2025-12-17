@@ -1,0 +1,162 @@
+/* 给所有顶栏链接预留图标位置（不影响布局时可微调） */
+/* .VPNavBar .VPNavBarMenu a::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    vertical-align: -2px;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+} */
+
+/* 针对具体链接地址设置对应图标（路径相对于 docs/public） */
+/*
+* 前端
+* ==============================================================================
+*/
+
+/* HTML */
+.VPNavBar .VPNavBarMenu a[href='/HTML/']::before {
+    background-image: url('https://api.iconify.design/devicon:html5.svg');
+}
+
+/* CSS */
+.VPNavBar .VPNavBarMenu a[href='/HTML/']::before {
+    background-image: url('https://api.iconify.design/devicon:css3.svg');
+}
+
+/* JavaScript */
+.VPNavBar .VPNavBarMenu a[href='/web/03.javascript/']::before {
+    background-image: url('https://api.iconify.design/tabler:brand-javascript.svg');
+}
+
+/* Vue */
+.VPNavBar .VPNavBarMenu a[href='/web/vue/']::before {
+    background-image: url('https://api.iconify.design/vscode-icons:file-type-vue.svg');
+}
+
+/* React */
+.VPNavBar .VPNavBarMenu a[href='/tags']::before {
+    background-image: url('https://api.iconify.design/devicon:react.svg');
+}
+
+/* tailwindcss */
+.VPNavBar .VPNavBarMenu a[href='/tags']::before {
+    background-image: url('https://api.iconify.design/material-icon-theme:tailwindcss.svg');
+}
+
+/*
+* 编程语言
+* ==============================================================================
+*/
+
+/* Python */
+.VPNavBar .VPNavBarMenu a[href='/']::before {
+    background-image: url('https://api.iconify.design/material-icon-theme:python.svg');
+}
+
+/* Java */
+.VPNavBar .VPNavBarMenu a[href='/']::before {
+    background-image: url('https://api.iconify.design/devicon:java.svg');
+}
+
+/* C */
+.VPNavBar .VPNavBarMenu a[href='/']::before {
+    background-image: url('https://api.iconify.design/logos:c.svg');
+}
+
+/* C++ */
+.VPNavBar .VPNavBarMenu a[href='/']::before {
+    background-image: url('https://api.iconify.design/logos:c-plusplus.svg');
+}
+
+/* C# */
+.VPNavBar .VPNavBarMenu a[href='/']::before {
+    background-image: url('https://api.iconify.design/logos:c-sharp.svg');
+}
+
+/* Php */
+.VPNavBar .VPNavBarMenu a[href='/']::before {
+    background-image: url('https://api.iconify.design/material-icon-theme:php.svg');
+}
+
+/* Go */
+.VPNavBar .VPNavBarMenu a[href='/tags']::before {
+    background-image: url('https://api.iconify.design/material-icon-theme:go.svg');
+}
+
+/* Sql */
+.VPNavBar .VPNavBarMenu a[href='/login']::before {
+    background-image: url('https://api.iconify.design/devicon:sqldeveloper.svg');
+}
+
+/*
+* 数据库
+* ==============================================================================
+*/
+
+/* Mysql */
+.VPNavBar .VPNavBarMenu a[href='/mysql/mysql']::before {
+    background-image: url('https://api.iconify.design/vscode-icons:file-type-mysql.svg');
+}
+
+/* Sqlite */
+.VPNavBar .VPNavBarMenu a[href='/login']::before {
+    background-image: url('https://api.iconify.design/devicon:sqlite.svg');
+}
+
+/* redis */
+.VPNavBar .VPNavBarMenu a[href='/login']::before {
+    background-image: url('https://api.iconify.design/devicon:redis.svg');
+}
+
+/*
+* 操作系统
+* ==============================================================================
+*/
+
+/* Linux */
+.VPNavBar .VPNavBarMenu a[href='/linux/linux']::before {
+    background-image: url('https://api.iconify.design/flat-color-icons:linux.svg');
+}
+
+/* Android */
+.VPNavBar .VPNavBarMenu a[href='/login']::before {
+    background-image: url('https://api.iconify.design/uil:android.svg');
+}
+
+/*
+* 开发工具
+* ==============================================================================
+*/
+
+/* IDEA */
+.VPNavBar .VPNavBarMenu a[href='/login']::before {
+    background-image: url('https://api.iconify.design/skill-icons:idea-dark.svg');
+}
+
+/* Pycharm */
+.VPNavBar .VPNavBarMenu a[href='/login']::before {
+    background-image: url('https://api.iconify.design/devicon:pycharm.svg');
+}
+
+/* VsCode */
+.VPNavBar .VPNavBarMenu a[href='/login']::before {
+    background-image: url('https://api.iconify.design/material-icon-theme:vscode.svg');
+}
+
+/* WebStorm */
+.VPNavBar .VPNavBarMenu a[href='/login']::before {
+    background-image: url('https://api.iconify.design/devicon:webstorm.svg');
+}
+
+/* Clion */
+.VPNavBar .VPNavBarMenu a[href='/login']::before {
+    background-image: url('https://api.iconify.design/logos:clion.svg');
+}
+
+/* 首页 */
+.VPNavBar .VPNavBarMenu a[href='/']::before {
+    background-image: url('https://api.iconify.design/fluent-color:home-16.svg');
+}

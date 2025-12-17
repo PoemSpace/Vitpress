@@ -1,0 +1,21 @@
+{
+  "devDependencies": {
+    "@iconify/vue": "^5.0.0",
+    "markdown-it": "^14.1.0",
+    "markdown-it-mathjax3": "^4.3.2",
+    "vitepress": "^1.6.4",
+    "vitepress-sidebar": "^1.33.1"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+    
+  },
+  "type": "module",
+  "version": "1.0.0",
+  "dependencies": {
+    "nprogress-v2": "^1.1.10",
+    "vitepress-plugin-group-icons": "^1.6.5"
+  }
+}
