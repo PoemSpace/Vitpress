@@ -77,7 +77,7 @@ const baseConfig = {
       // 时间格式化选项
       formatOptions: {
         // 显示完整日期
-        dateStyle: 'true',
+        // dateStyle: 'true',
         // 显示简短时间
         timeStyle: 'short'
       }
@@ -135,7 +135,7 @@ const baseConfig = {
     // Vite插件配置
     plugins: [
       // 使用代码组图标插件
-      groupIconVitePlugin()
+      // groupIconVitePlugin()
     ],
   },
 }

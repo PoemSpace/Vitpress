@@ -9,7 +9,7 @@ interface Post {
     }
     excerpt: string | undefined
     tags: string[]
-    icon: string // [!code ++] 1. 新增类型定义
+    icon: string
 }
 
 declare const data: Post[]
@@ -26,7 +26,6 @@ export default createContentLoader('**/*.md', {
                 excerpt,
                 date: formatDate(frontmatter.date),
                 tags: frontmatter.tags || [],
-                // [!code ++] 2. 获取 icon，如果没有定义，默认显示 📄
                 icon: frontmatter.icon || '📄'
             }))
             .sort((a, b) => b.date.time - a.date.time)

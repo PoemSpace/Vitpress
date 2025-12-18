@@ -5,15 +5,7 @@ tags: [Markdown]
 icon: skill-icons:html
 ---
 
----
-date: 2025-10-11 19:56:58
-title: 写作语法大全
-categories:
-  - web
-  - vue
----
-
-## 目录
+# 目录
 
 ```
 [[toc]]

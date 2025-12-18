@@ -32,8 +32,8 @@ export const nav: DefaultTheme.Config['nav'] = [
             }
         ],
     },
-    {
-        text: '唐诗三百首',
-        link:'/唐诗三百首/index.md',
-    }
+    // {
+    //     text: '唐诗三百首',
+    //     link:'/唐诗三百首/index.md',
+    // }
 ]
