@@ -8,8 +8,8 @@ import Timeline from './components/Timeline.vue' // 引入时间轴组件
 import Archives from './components/Archives.vue' // 引入归档组件
 import Tags from './components/Tags.vue' // 引入标签组件
 
-import { NProgress } from 'nprogress-v2/dist/index.js' // 进度条组件
-import 'nprogress-v2/dist/index.css' // 进度条样式
+// import { NProgress } from 'nprogress-v2/dist/index.js' // 进度条组件
+// import 'nprogress-v2/dist/index.css' // 进度条样式
 
 import ArticleMetadata from "./components/ArticleMetadata.vue" // 引入文章元数据组件
 
@@ -33,11 +33,11 @@ export default {
     if (typeof window !== 'undefined') {
       router.onBeforeRouteChange = () => {
         // 路由切换前的处理
-        NProgress.start() // 开始进度条
+        // NProgress.start() // 开始进度条
       }
       router.onAfterRouteChanged = () => {
         // 路由切换后的处理
-        NProgress.done() // 结束进度条
+        // NProgress.done() // 结束进度条
       }
     }
   }
